@@ -8,7 +8,7 @@ b) Pida al usuario dos números y muestre su suma.
 c) Pida al usuario dos números y muestre el mayor.
 d) Pida al usuario tres números y muestre una leyenda que diga si los tres son iguales, sino lo son que también lo informe.
 e) Pida al usuario tres números y muéstrelos ordenados de mayor a menor.
-f) Pida al usuario su peso en kg y su altura en metros y muestre su índice de masa corporal (IMC): Peso (en Kg) / Altura (en metros) al cuadrado.
+f) Pida al usuario su peso en kg y su altura en metros y muestre su índice de masa corporal (IMC): Peso (en Kg) / (Altura (en metros) al cuadrado).
 Si el número esta por debajo de 18.5 mostrá la leyenda "Bajo peso"
 Si el número esta entre 18.6 y 24.9  mostrá la leyenda "Normal"
 Si el número esta entre 25 y 29.9  mostrá la leyenda "Sobrepeso"
@@ -45,3 +45,19 @@ Total a facturar: $3500.00
 a) Que indique con un número el ítem que quiere modificar. 
 b) Se reemplazara el nombre del artículo pero no la cantidad y el costo. 
 c) Una vez finalizado el reemplazo se preguntará si quiere seguir modificando. En caso afirmativo pasaremos al punto (a) y sino se mostrará el punto (6 - e)
+
+8) Modificá el ejercicio anterior para que haya un vector que sea "ítems"; otro, "precio por unidad" y el tercero "cantidad comprada".
+a) Al señalar un campo a modificar (ingresado a partir del índice del mismo) debes pedir el nombre del ítem, la cantidad y el precio. Y modificarlos en cada vector.
+b) Cuando ya no se busque modificar alguno de los ítems, se mostrará el resultado final (punto 6 - e)
+
+9) Crearemos un log.
+Los sistemas de logueo son sistemas que muestran todo el trackeo de los datos. Suelen usarse en sistemas de bases de datos que requieren auditoría para comprender quiénes hicieron determinados cambios.
+a) Al ejercicio anterior se agregará un vector nuevo que irá grabando cada movimiento que se genere. Si seguimos el ejercicio 6 quedaría:
+****** INICIO LOG ********
+[AGREGO] Manteca - 1 unidad - $500
+[AGREGO] Cafe - 2 Unidades - $370
+[AGREGO] Limones - 10 unidades - $25
+Y luego modificamos (por el ejercicio 7) el cafe por Malta, su precio y la cantidad, entonces el registro continuaría:
+[MODIFICO] Cafe por Malta - 2 unidades por 3 unidades - $370 por $125
+****** FIN LOG ********
+Nota: Lo importante en los sistemas de logueo es que no se pierde ningún valor de los ingresados.
